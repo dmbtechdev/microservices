@@ -1,7 +1,7 @@
 # version: "3.9"
 services:
   health-check:
-    image: dmbtechdev/health-check:ver1
+    image: dmbtechdev/health-check:0.0.1
     build:
       context: .
       dockerfile: Dockerfile-health
@@ -10,7 +10,7 @@ services:
       auth:
         condition: service_started
   auth:
-    image: dmbtechdev/auth:ver1
+    image: dmbtechdev/auth:0.0.1
     build:
       context: .
       dockerfile: Dockerfile-auth
