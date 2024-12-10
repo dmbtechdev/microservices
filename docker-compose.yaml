@@ -10,7 +10,7 @@ services:
       auth:
         condition: service_started
   auth:
-    image: dmbtechdev/auth:latest:ver1
+    image: dmbtechdev/auth:ver1
     build:
       context: .
       dockerfile: Dockerfile-auth
