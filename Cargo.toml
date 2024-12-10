@@ -1,0 +1,22 @@
+bin = [
+    {name = "auth", path = "src/auth-service/main.rs"},
+    {name = "health-check", path = "src/health-check-service/main.rs"},
+    {name = "client", path = "src/client/main.rs"},
+]
+
+[package]
+name = "microservices"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+tonic = "0.12.3"
+prost = "0.13.4"
+tokio = { version = "1.42.0", features = ["macros", "rt-multi-thread", "time"] }
+uuid = { version = "1.11.0", features = ["v4"] }
+pbkdf2 = { version = "0.12.2", features = ["simple"] }
+rand_core = { version = "0.6.4", features = ["std"] }
+clap = { version = "4.5.23", features = ["derive"] }
+
+[build-dependencies]
+tonic-build = "0.12.3"
