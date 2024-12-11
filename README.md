@@ -23,4 +23,4 @@ Build a microservice app consisting of 2 services, an authentication service and
 
 * GitHub Actions
 * Docker
-* Oracle cloud Compute free tier
+* Oracle cloud Compute free tier (to be added)
