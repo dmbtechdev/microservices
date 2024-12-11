@@ -1,4 +1,4 @@
-# version: "3.9"
+version: "3.11"
 services:
   health-check:
     image: dmbtechdev/image:health-check.0.0.1
@@ -14,6 +14,7 @@ services:
     build:
       context: .
       dockerfile: Dockerfile-auth
+    container_name: auth
     restart: "always"
     ports:
       - "50051:50051"
